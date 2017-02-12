@@ -1,0 +1,62 @@
+<import src="/pages/movies/stars/starsTemplate.wxml" />
+
+<!--pages/movies/movie-detail/movie-detail.wxml-->
+<view class="container">
+  <image mode="aspectFill" class="head-img" src="{{movie.movieImg}}" />
+  <view class="head-img-hover">
+    <text class="main-title">{{movie.title}}</text>
+    <text class="sub-title">{{movie.country}}-{{movie.year}}</text>
+    <view class="like">
+      <text class="highlight-font">{{movie.wishCount}}</text>
+      <text class="plain-font">人喜欢</text>
+      <text class="highlight-font">{{movie.commentCount}}</text>
+      <text class="plain-font">人评论</text>
+    </view>
+    <image catchtap="previewImage" data-src="{{movie.movieImg}}" class="movie-img" src="{{movie.movieImg}}"></image>
+  </view>
+  <view class="summary">
+    <view class="original-title">
+      <text class="original-title">{{movie.title}}</text>
+    </view>
+    <view class="flex-row">
+      <text class="mark">评分</text>
+      <template is="starsTemplate" data="{{stars: movie.stars}}" />
+      <text>{{movie.score}}</text>
+    </view>
+    <view class="flex-row">
+      <text class="mark">导演</text>
+      <text>{{movie.director.name}}</text>
+    </view>
+    <view class="flex-row">
+      <text class="mark">影人</text>
+      <text>{{movie.casts}}</text>
+    </view>
+    <view class="flex-row">
+      <text class="mark">类型</text>
+      <text>{{movie.generes}}</text>
+    </view>
+  </view>
+  <view class="hr" />
+
+  <!-- 剧情简介-->
+  <view class="synopsis">
+    <text class="synopsis-font">剧情简介</text>
+    <text class="summary-content">{{movie.summary}}</text>
+  </view>
+  <view class="hr" />
+
+  <!-- 影人-->
+  <view class="casts">
+    <view class="casts-font">
+      <text>影人</text>
+    </view>
+    <scroll-view class="cast-imgs" scroll-x="true">
+      <block wx:for="{{movie.castsInfo}}">
+        <view class="cast-container">
+          <image class="cast-img" src="{{item.img}}" />
+          <text class="cast-name">{{item.name}}</text>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>

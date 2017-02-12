@@ -1,0 +1,8 @@
+<!--welcome/welcome.wxml-->
+<view class="container">
+    <image class="user-avator" src="{{userInfo.avatarUrl}}"></image>
+    <text class="user-name">你好, {{userInfo.nickName}}</text>
+    <view class="moto-container">
+        <text class="user-moto" bindtap="onTap">小程序之旅</text>
+    </view>
+</view>

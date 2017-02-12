@@ -1,0 +1,11 @@
+/* pages/movies/movieGridTemplate/movieGridTemplate.wxss */
+@import "/pages/movies/movie/movieTemplate.wxss";
+
+.movieGrid {
+    margin: 40rpx 0 40rpx 6rpx;
+    height: 1300rpx;
+}
+.movieGrid-container {
+    float: left;
+    margin-bottom: 20rpx;
+}
