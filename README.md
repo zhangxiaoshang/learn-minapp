@@ -1,8 +1,24 @@
 # learn-minapp
 
-### 说明
+### 项目简介
 
 集文章阅读，音乐播放，豆瓣电影为一体的小程序DEMO.
+
+### 效果图
+![page](http://oigrj4b52.bkt.clouddn.com/image/github/repository/learn-minapp/post.png)
+![page-detail](http://oigrj4b52.bkt.clouddn.com/image/github/repository/learn-minapp/post-detail.png)
+![movie](http://oigrj4b52.bkt.clouddn.com/image/github/repository/learn-minapp/movie.png)
+![movie-detail](http://oigrj4b52.bkt.clouddn.com/image/github/repository/learn-minapp/movie-detail.png)
+
+### 功能说明
+
+文章阅读：swiper轮播图、背景音乐、showTast
+
+豆瓣电影：接口访问来自豆瓣api，目前功能有：电影搜索、下拉刷新、上拉加载
+
+#### 代码说明
+
+部分采用es6语言，组件化，模块化开发。
 
 ### 下载&启动
 
