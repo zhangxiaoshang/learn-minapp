@@ -6,8 +6,11 @@
 
 ### 效果图
 ![page](http://oigrj4b52.bkt.clouddn.com/image/github/repository/learn-minapp/post.png)
+
 ![page-detail](http://oigrj4b52.bkt.clouddn.com/image/github/repository/learn-minapp/post-detail.png)
+
 ![movie](http://oigrj4b52.bkt.clouddn.com/image/github/repository/learn-minapp/movie.png)
+
 ![movie-detail](http://oigrj4b52.bkt.clouddn.com/image/github/repository/learn-minapp/movie-detail.png)
 
 ### 功能说明
